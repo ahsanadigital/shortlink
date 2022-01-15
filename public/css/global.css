@@ -1,0 +1,28 @@
+#main-navbar li {
+  margin-right: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-navbar li {
+    margin-right: 0;
+  }
+
+  #main-navbar #navbarSupportedContent {
+    position: fixed;
+    padding: 1rem;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: calc(100vh - 3.5rem);
+    border-top: 1px solid #eee;
+    margin-top: 3.5rem;
+    z-index: 1000;
+    margin-left: -100%;
+    transition: .2s all;
+  }
+
+  #main-navbar #navbarSupportedContent.show {
+    margin-left: 0;
+  }
+}

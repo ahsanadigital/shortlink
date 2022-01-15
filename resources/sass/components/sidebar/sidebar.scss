@@ -1,0 +1,6 @@
+[data-sidebar="light"] {
+  @import './sidebar-light/main.scss';
+}
+[data-sidebar="dark"] {
+  @import './sidebar-dark/main.scss';
+}

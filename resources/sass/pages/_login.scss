@@ -1,0 +1,23 @@
+#app {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .form-control {
+      &:nth-child(1) {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 1.15rem;
+        padding: .65rem 1.25rem;
+      }
+
+      &:nth-child(2) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        font-size: 1.15rem;
+        border-top-color: transparent;
+        padding: .65rem 1.25rem;
+      }
+    }
+  }
+}

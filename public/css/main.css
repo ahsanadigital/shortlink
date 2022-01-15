@@ -1,0 +1,87 @@
+/** Shortner */
+#shortner {
+  padding: 5rem 0;
+  min-height: 60vh;
+}
+
+#shortner .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#shortner .description {
+  font-size: 1.175rem;
+  color: rgba(0,0,0,.7);
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #shortner .title {
+    font-size: 2rem;
+  }
+
+  #shortner .description {
+    font-size: 1rem;
+    color: rgba(0,0,0,.7);
+    margin: 0;
+  }
+}
+
+#shortner .group-wrapper {
+  box-shadow: 0 4px 8px rgb(232 232 232);
+  border-radius: .5rem;
+  position: relative;
+}
+
+#shortner .group-wrapper .form-control {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  font-size: 1.5rem;
+}
+
+#shortner .group-wrapper button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: .6rem;
+  margin-right: .65rem;
+}
+
+/** URL Wrapper Result */
+#nav-result .card {
+  font-size: 1.25rem;
+  overflow-x: auto;
+  position: relative;
+  padding-right: 3rem;
+}
+
+#nav-result .card .shortlink-wrapper {
+  display: flex;
+}
+
+#nav-result .card .shortlink-wrapper span:nth-child(1) {
+  color: rgb(176 176 176);
+}
+
+#nav-result .card .shortlink-wrapper span:nth-child(2) {
+  margin: 0 .5rem;
+}
+
+#nav-result .card .shortlink-wrapper span:nth-child(3) {
+  font-weight: 600;
+}
+
+#nav-result .card .btn-group {
+  position: absolute;
+  right: 1.25rem;
+  background: white;
+  top: 1rem;
+}
+
+/** Main Data */
+section#main-data .card {
+  background: rgba(255,255,255, .1) !important;
+  color: white;
+}

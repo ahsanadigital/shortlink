@@ -1,0 +1,15 @@
+.dropdown {
+  &-menu {
+    border: 0;
+    box-shadow: 0 4px 24px rgba($dark, .10);
+    padding: .5rem;
+
+    .dropdown-item {
+      border-radius: .25rem;
+    }
+
+    .dropdown-divider {
+      border-color: $gray-300;
+    }
+  }
+}

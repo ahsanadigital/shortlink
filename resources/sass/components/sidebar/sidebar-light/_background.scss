@@ -1,0 +1,70 @@
+@each $color, $value in $theme-colors {
+  section.sidebar.sidebar-#{$color} {
+    #menu {
+      .sidebar-item {
+        >.sidebar-link {
+          // Action Property ========================================
+          &:focus {
+            background: rgba($value, 1);
+            color: white;
+          }
+
+          &:hover {
+            background: rgba($value, .1);
+            color: $value;
+
+            &::after {
+              border-color: $value;
+            }
+          }
+          // Action Property ========================================
+        }
+
+        &.mm-active {
+          .sidebar-link {
+            background: rgba($value, 100%);
+
+            &:hover {
+              background: rgba($value, .1);
+              color: $value;
+
+              &::after {
+                border-color: $value;
+              }
+            }
+          }
+        }
+
+        ul.submenu {
+          .submenu-wrapper {
+            .submenu-item {
+              .submenu-link {
+                background: unset;
+
+                // Action Property ========================================
+                &:hover, &:focus {
+                  color: $value;
+
+                  &::after {
+                    border-color: $value;
+                  }
+                }
+                // Action Property ========================================
+              }
+
+              &.mm-active {
+                >.submenu-link {
+                  color: $value;
+
+                  &::after {
+                    border-color: $value;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

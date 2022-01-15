@@ -1,0 +1,9 @@
+.footer {
+  padding: 1rem 0;
+
+  @include media-breakpoint-down('lg') {
+    .single-col {
+      text-align: center;
+    }
+  }
+}

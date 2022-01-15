@@ -1,0 +1,23 @@
+#app-wrapper {
+  background: $gray-100;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #content-wrapper {
+    margin-left: $sidebar-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    @include media-breakpoint-down('lg') {
+      margin: 0;
+    }
+
+    @import 'navbar';
+    @import 'container';
+    @import 'footer';
+  }
+}

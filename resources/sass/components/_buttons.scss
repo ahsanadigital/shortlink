@@ -1,0 +1,48 @@
+// Regular & Outlined
+.btn {
+  &-primary,
+  &-danger,
+  &-warning,
+  &-success,
+  &-info,
+  &-secondary,
+  &-dark {
+    color: $white;
+
+    &:focus,
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  &-outline-primary,
+  &-outline-danger,
+  &-outline-warning,
+  &-outline-success,
+  &-outline-info,
+  &-outline-secondary,
+  &-outline-dark {
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-outline-light {
+    color: $dark;
+  }
+}
+
+// Dimmed Regular & Outlined
+.btn {
+  @each $color, $value in $theme-colors {
+    &-dimmed.btn-#{$color} {
+        @include button-dimmed($color, $value);
+    }
+  }
+  @each $color, $value in $theme-colors {
+    &-dimmed.btn-outlined.btn-#{$color} {
+        @include button-outline-dimmed($color, $value);
+    }
+  }
+}

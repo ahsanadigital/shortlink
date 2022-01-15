@@ -1,0 +1,23 @@
+.sidebar-title {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-down('lg') {
+    justify-content: space-between;
+  }
+
+  .sidebar-img {
+    display: flex;
+    height: 30px;
+  }
+
+  [data-trigger="sidebar-toggler"] {
+    color: $white;
+
+    @include media-breakpoint-up('lg') {
+      display: none;
+    }
+  }
+}
