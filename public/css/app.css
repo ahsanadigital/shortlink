@@ -10834,6 +10834,11 @@ a:hover {
   color: #adb5bd;
 }
 
+.custom-control .custom-control-label::before,
+.custom-control .custom-control-label::after {
+  border-radius: 0.25rem;
+}
+
 [data-sidebar=light] section.sidebar {
   min-height: 100vh;
   width: 325px;

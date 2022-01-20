@@ -14,17 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/** For Login */
 Auth::routes();
 
+/** For Homepage */
 Route::middleware(['guest'])->group(function () {
   Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
   Route::post('/shorting', [\App\Http\Controllers\HomeController::class, 'shorting'])->name('shorting');
 });
 
 Route::get('{id}', [\App\Http\Controllers\HomeController::class, 'source'])->name('short-url');
-
-// Route::get('/debug', function(\App\Models\Visitor $visit) {
-//   dd(
-//     $visit->get()->groupBy('id_link')
-//   );
-// });

@@ -1,0 +1,6 @@
+.custom-control {
+  .custom-control-label::before,
+  .custom-control-label::after {
+    border-radius: .25rem;
+  }
+}

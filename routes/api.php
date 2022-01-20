@@ -18,7 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
   return $request->user();
 });
 
-Route::get('/debug', function() {
-  dd(request()->getPort(), request()->getPort() == 80 OR request()->getPort() == 443);
-});
+/** Custom API */
 Route::any('/statistic', [\App\Http\Controllers\HomeController::class, 'statistic'])->name('statistic');
